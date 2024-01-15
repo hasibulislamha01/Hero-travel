@@ -1,0 +1,155 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* common styles are written here */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: 'Mulish', sans-serif;
+  margin: 3rem 8.438rem;
+}
+.division{
+    margin-top: 6.25rem;
+}
+.center-align{
+  text-align: center;
+}
+.bold-text{
+  font-weight: 700;
+}
+.regular-text{
+  font-weight: 400;
+}
+.theme-button{
+    background-color: #FF5400;
+    color: white;
+    width: 10.875rem;
+    height: 3.25rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+
+
+/* other styles are written here */
+
+/* header section styles */
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto 3rem auto;
+}
+.nav-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 800;
+  font-size: 2.25rem;
+}
+.nav-header img{
+  width: auto;
+}
+.theme-text{
+  color: #FF5400;
+}
+.menu{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu a{
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #424247;
+}
+.hamburger{
+  display: none;
+} 
+
+.top-banner{
+    background: rgba(0, 0, 0, 0.384) url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-heading{
+    color: #fff;
+    font-size: 4rem;
+  /* padding: 6.625rem auto auto auto ; */
+}
+.top-banner p{
+    color: #fff;
+    font-size: 1rem;
+    margin: 1.5rem auto 3rem auto;
+    width: 70%;
+}
+.input-container{
+    background-color: #ffffff50;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.input{
+    width: 10.875rem;
+    height: 3.25rem;
+    font-family: 'Mulish', sans-serif;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 0rem 0.75rem;
+}
+.popular-tour{
+    display: flex;
+    justify-content: space-between;
+}
+.popular-tour-description{
+    width: 45%;
+}
+.popular-tour-description h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.popular-tour-description p{
+    margin: 1.5rem 3rem 1.5rem 0rem;
+}
+.popular-tour-description ul li{
+    margin: 1rem auto 1rem auto;
+}
+
+
+/* this styles will work for the small devices (mobiles) */
+
+@media screen and (max-width:576px){
+  body{
+      margin: 1rem;
+  }
+  nav{
+      flex-direction: column;
+  }
+  .menu{
+      margin-top: 1rem;
+  }
+  .input-container{
+    min-height: 70%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .input{
+    margin: .5rem auto;
+  }
+  .popular-tour{
+    flex-direction: column;
+  }
+}
