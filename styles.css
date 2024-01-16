@@ -24,6 +24,10 @@ body{
 .regular-text{
   font-weight: 400;
 }
+.theme-heading{
+  font-size: 2.5rem;
+  font-weight: 800;
+}
 .theme-button{
     background-color: #FF5400;
     color: white;
@@ -86,6 +90,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 .banner-heading{
     color: #fff;
@@ -120,16 +125,94 @@ nav{
 .popular-tour-description{
     width: 45%;
 }
-.popular-tour-description h1{
-    font-size: 2.5rem;
-    font-weight: 800;
-}
+
 .popular-tour-description p{
     margin: 1.5rem 3rem 1.5rem 0rem;
 }
 .popular-tour-description ul li{
     margin: 1rem auto 1rem auto;
 }
+
+
+/* Choose your destination section styles */
+.destination{
+  text-align: center;
+}
+
+.short-width-section{
+  width: 40.188rem;
+  margin: 1.5rem auto 1rem auto;
+}
+
+.collage-container{
+  margin: 3rem auto 0rem auto;
+  max-width: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.collage-row{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.place-card{
+  position: relative;
+  width: auto;
+  margin: 0px auto;
+}
+
+.place-image{
+  width: 100%;
+}
+
+
+
+.place-name{
+  color: #ffffffd5;
+  font-size: 1.75rem;
+  font-weight: 800;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Why choose us section */
+.rose-bg{
+  background-color: rgba(251, 181, 99, 0.20);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  width: 50%;
+  
+}
+.rectangle{
+  padding: 2rem;
+}
+.rectangle h1{
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+.rectangle-2{
+  background-color: rgba(41, 206, 246, 0.20);
+}
+.rectangle-3{
+  margin: 1.5rem auto;
+}
+/* .rectangle-2 img{
+  background-color: rgba(41, 206, 246, 0.20);
+} */
+
+.flex-container{
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+
 
 
 /* this styles will work for the small devices (mobiles) */
@@ -162,4 +245,35 @@ nav{
     width: 100%;
     margin-top: 1rem;
   }
+  .destination p{
+    width: 100%;
+    margin: .5rem auto 1rem auto;
+  }
+  
+  /* collage section */
+  .collage-container{
+    flex-direction: column;
+    gap: 1rem;
+  } 
+  .collage-row{
+    flex-direction: column;
+  } 
+  .place-card{
+    width: 100%;
+  }
+  .place-image{
+    width: 100%;
+  }
+  .short-width-section{
+    width: 100%;
+  }
+  .flex-container{
+    flex-direction: column;
+  }
+  .rectangle{
+    width: 95%;
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  }
+
+    
 }
