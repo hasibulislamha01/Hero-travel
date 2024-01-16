@@ -32,6 +32,9 @@ body{
     border: 1px solid transparent;
     border-radius: 10px;
 }
+button, .theme-button:hover{
+  cursor: pointer;
+}
 
 
 
@@ -135,11 +138,11 @@ nav{
   body{
       margin: 1rem;
   }
-  nav{
-      flex-direction: column;
-  }
   .menu{
-      margin-top: 1rem;
+      display: none;
+  }
+  .hamburger{
+    display: block;
   }
   .input-container{
     min-height: 70%;
@@ -151,5 +154,12 @@ nav{
   }
   .popular-tour{
     flex-direction: column;
+  }
+  .popular-tour-description{
+    width: 100%;
+  }
+  .popular-tour div img{
+    width: 100%;
+    margin-top: 1rem;
   }
 }
