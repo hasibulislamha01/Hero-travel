@@ -129,7 +129,7 @@ nav{
 .popular-tour-description p{
     margin: 1.5rem 3rem 1.5rem 0rem;
 }
-.popular-tour-description ul li{
+.tour-lists li{
     margin: 1rem auto 1rem auto;
 }
 
@@ -214,7 +214,7 @@ nav{
   gap: 1.5rem;
 }
 .newsletter-input{
-  width: 50%;
+  width: 40%;
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -263,6 +263,7 @@ input::placeholder{
 
 .newsletter-image{
   position: relative;
+
 }
 .newsletter-image img{
   width: 100%;
@@ -281,12 +282,43 @@ input::placeholder{
   justify-content: center;
   position: absolute;
   transform: rotate(-20deg);
-  bottom: 10%;
-  left: 50%;
+  top: 61%;
+  left: 43%;
 }
-.discount h3{
 
+/* footer styles */
+
+footer{
+  margin: 0rem -8.438rem;
+  background-color: #1313180D;
+  padding: 110px 250px;
 }
+.footer p{
+  width: auto;
+  margin: 0px auto 3rem auto;
+}
+
+.icons{
+  margin: 3rem auto;
+}
+
+#footer-head{
+  width: auto;
+  margin: 0px auto;
+  font-weight: 800;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+.icons{
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.copyright{
+  margin-top: 3rem;
+}
+
+
 /* this styles will work for the small devices (mobiles) */
 
 @media screen and (max-width:576px){
@@ -298,6 +330,10 @@ input::placeholder{
   }
   .hamburger{
     display: block;
+  }
+  .banner-heading{
+    font-size: 2rem;
+    margin: 2rem auto 0rem auto;
   }
   .input-container{
     min-height: 70%;
@@ -347,5 +383,32 @@ input::placeholder{
     padding: 0.5rem 0.5rem 1.5rem 0.5rem;
   }
 
+  /* newsletter section */
+  .newsletter-container{
+    flex-direction: column;
+  }
+  .newsletter-input{
+    width: auto;
+    margin: 0px auto;
+  }
+  .newsletter-image{
+    width: auto;
+    margin: 0px auto;
+  }
+  .discount{
+    width: 13.375rem;
+    height: 4.938rem;
+    top: 52%;
+  }
+  footer{
+    margin: 0rem -1rem;
+    width: 100%;
+    background-color: #1313180D;
+    padding: 5rem 1rem;
+  }
+  
+  .icons{
+    width: 100%;
+  }
     
 }
