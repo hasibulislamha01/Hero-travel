@@ -161,10 +161,10 @@
 
         
         <!-------------------- Deals and discount section ------------------ -->
-        <section class="division">
+        <section class="division relative">
             <div class="center-align">
                 <h1 class="theme-heading">Deals And Discounts</h1>
-            <p class="short-width-section">
+            <p class="short-width-section deals-paragraph">
                 We have some unbelievable discounts going on for short time on some specific tour events. Don't miss this opportunity to get lost inside a joyfull events.
             </p>
             </div>
@@ -172,6 +172,23 @@
             <div class="tour-details-parent">
                 <img src="Images/Group 39.png" alt="">
                 <div class="tour-details">
+                    <p class="icon-container">
+                        <span class="icon-section"><i class="fa-solid fa-clock theme-color"></i> 7 day / 6 night</span>
+                        <span class="icon-section"><i class="fa-solid fa-users theme-color"></i>max : 10</span>
+                        <span class="icon-section"><i class="fa-solid fa-location-dot theme-color"></i>Malaysia</span>
+                    </p>
+                    <h2 class="extra-bold">Tour to Satorini</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tempore veritatis, itaque aliquam rerum totam, deleniti accusantium, mollitia hic repellat explicabo modi veniam temporibus autem!
+                    </p>
+                    <h1 class="theme-text extra-bold">Price: $1300 - $1500</h1>
+                    <button class="theme-button">Book Now</button>
+                </div>
+            </div>
+            
+            <div class="tour-details-parent">
+                <img src="Images/Group 40.png" alt="">
+                <div class="tour-details"  id="tour-details-2">
                     <p>
                         <span class="icon-section"><i class="fa-solid fa-clock theme-color"></i> 7 day / 6 night</span>
                         <span class="icon-section"><i class="fa-solid fa-users theme-color"></i>max : 10</span>
@@ -185,6 +202,7 @@
                     <button class="theme-button">Book Now</button>
                 </div>
             </div>
+            
             <div class="tour-details-parent">
                 <img src="Images/Group 39.png" alt="">
                 <div class="tour-details">
@@ -201,10 +219,32 @@
                     <button class="theme-button">Book Now</button>
                 </div>
             </div>
+            <button class="theme-button Packages-button">See All Packages</button> 
         </section>
         
         
-        
+            <!-- Perfect place section -->
+            <section class="division perfect-place">
+                <div>
+                    <h1 class="theme-heading">A Perfect Place To Get Lost</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi neque autem incidunt debitis nulla exercitationem, ex voluptate ducimus. Impedit, minima!
+                    </p>
+                    <ul>
+                        <li>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tempore.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatum.
+                        </li>
+                    </ul>
+                    <button class="theme-button">See More</button>
+                </div>
+                <div class="video-container">
+                    
+                    <video style="width: 100%;" src="Images/Group 40089 .mp4" controls></video>
+                </div>
+            </section>            
         
         
         <!-- Newsletter section -->
@@ -228,7 +268,7 @@
             </div>
         </section>
 
-        <!-- feedback section -->
+        <!------------- feedback section -------------------->
         <section class="feedback-header division">
             <h1 class="theme-heading center-align">Give Us A Feedback</h1>
             <p class="center-align short-width-section">
@@ -237,17 +277,29 @@
         </section>
         <section class="feedback">
             <div class="feedback-image">
-                <img src="Images/drone-view.webp" alt="">
+                <img class="sea" src="Images/drone-view.webp" alt="">
+                <img src="Images/mountain.jpg" alt="">
             </div>
             <div class="feedback-form">
                 <h1 class="center-align">Feedback form</h1>
+                Enter user name:
                 <input type="text" placeholder="Your User-name "class="user-input">
-                <input type="email" placeholder="Your E-mail"class="user-input">
-                <input type="text" placeholder="Describe your experience briefly "class="user-input">
-                <input type="datetime" placeholder="Enter the date you visited"class="user-input">
+                Your Email:
+                <input type="email" placeholder="user@gmail.com"class="user-input">
+                Describe Your Experience With Us:
+                <input id="description" type="text" placeholder="Describe your experience briefly "class="user-input">
+                Date you visited:
+                <input type="date" placeholder="Enter the month you visited"class="user-input">
+                
+                Your Suggessions Are Most Welcome:
+                <input type="text" placeholder="Did you feel that we have something to improve" class="user-input">
+                
                 <button class="theme-button">Submit</button>
             </div>
         </section>
+
+
+
     </main>
 
     <!-- footer section starts here -->
