@@ -21,12 +21,18 @@ body{
 .bold-text{
   font-weight: 700;
 }
+.extra-bold{
+  font-weight: 800;
+}
 .regular-text{
   font-weight: 400;
 }
 .theme-heading{
   font-size: 2.5rem;
   font-weight: 800;
+}
+.theme-color{
+  color: #FF5400;
 }
 .theme-button{
     background-color: #FF5400;
@@ -43,7 +49,10 @@ button, .theme-button:hover{
   cursor: pointer;
 }
 
-
+.short-width-section{
+  width: 40.188rem;
+  margin: 1.5rem auto 1rem auto;
+}
 
 /* other styles are written here */
 
@@ -121,6 +130,7 @@ nav{
     border-radius: 10px;
     margin: 0rem 0.75rem;
 }
+
 .popular-tour{
     display: flex;
     justify-content: space-between;
@@ -142,10 +152,7 @@ nav{
   text-align: center;
 }
 
-.short-width-section{
-  width: 40.188rem;
-  margin: 1.5rem auto 1rem auto;
-}
+
 
 .collage-container{
   margin: 3rem auto 0rem auto;
@@ -212,6 +219,44 @@ nav{
   margin-top: 2rem;
 }
 
+
+
+/* ------------ Deals and Discounts section styles ------------ */
+.tour-details-parent{
+  position: relative;
+}
+.tour-details-parent img{
+  width: 100%;
+}
+.tour-details{
+  background-color: #ffffffc0;
+  width: 40%;
+  padding: 3rem;
+  border-radius: 10px;
+  position: absolute;
+  top: 6%;
+  left: 47%;
+}
+.tour-details h2{
+  margin-top: 1rem;
+}
+.tour-details p{
+  margin: 1rem auto;
+}
+.tour-details h1{
+  margin-bottom: 1.5rem;
+}
+
+.icon-section{
+  margin: 1rem 1.5rem auto 0rem;
+}
+.fa-solid{
+  margin-right: 0.5rem;
+}
+
+
+
+/* ----------- Newsletter section styles ------------ */
 .newsletter-container{
   display: flex;
   gap: 1.5rem;
