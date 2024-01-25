@@ -6,6 +6,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body{
@@ -96,13 +97,15 @@ nav{
     background: rgba(0, 0, 0, 0.384) url(Images/Group\ 13\ \(1\)\ \(1\).png);
     background-blend-mode: darken;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius: 15px;
     min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: cover;
+    padding-bottom: 2rem;
 }
 .banner-heading{
     color: #fff;
@@ -137,6 +140,8 @@ nav{
 }
 .popular-tour-description{
     width: 45%;
+    margin: 0px auto;
+    
 }
 
 .popular-tour-description p{
@@ -235,6 +240,7 @@ nav{
 }
 .tour-details-parent img{
   width: 100%;
+  object-fit: cover;
 }
 
 .icon-container{
@@ -469,7 +475,8 @@ footer{
 
 @media screen and (max-width:600px){
   body{
-      margin: 1rem;
+      width: 95%;
+      margin: 1rem auto 0rem auto;
   }
   .menu{
       display: none;
@@ -497,6 +504,9 @@ footer{
   }
   .popular-tour-description{
     width: 100%;
+  }
+  .popular-tour-description ul{
+    padding-left: 1rem;
   }
   .popular-tour div img{
     width: 100%;

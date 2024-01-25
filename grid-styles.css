@@ -1,0 +1,137 @@
+body{
+    font-family: 'Mulish', sans-serif;
+    margin: 3rem 8.438rem;
+  }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto 3rem auto;
+  }
+  .nav-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2.25rem;
+  }
+  .nav-header img{
+    width: auto;
+  }
+  .theme-text{
+    color: #FF5400;
+  }
+  .menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .menu a{
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: #424247;
+  }
+  .hamburger{
+    display: none;
+  } 
+  
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1.5rem;
+}
+
+.grid-container div{
+    position: relative;
+}
+.grid-container div img{
+    width: 100%;
+    object-fit: cover;
+}
+.Maldives{
+    grid-column: span 6;
+}
+.Indonesia{
+    grid-column: span 6;
+}
+.sri-lanka{
+    grid-column: span 4;
+}
+.north-america{
+    grid-column: span 5;
+}
+.Kashmir{
+    grid-column: span 3;
+}
+.Bangladesh{
+    grid-column: span 5;
+}
+.Bandarban{
+    grid-column: span 7;
+}
+.place-name{
+    margin: 0rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 567px) {
+    body{
+        margin: 1rem;
+    }
+    .menu{
+        display: none;
+    }
+    .hamburger{
+      display: block;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .grid-container div{
+        height: 150px;
+    }
+    .grid-container div img{
+        
+        height: 100%;
+        object-fit: cover;
+    }
+    /* .Maldives{
+        grid-column: span 1;
+        border: 3px dashed blue;
+    }
+    .Indonesia{
+        grid-column: span 1;
+    }
+    .sri-lanka{
+        grid-column: span 1;
+    }
+    .north-america{
+        grid-column: span 1;
+    }
+    .Kashmir{
+        grid-column: span 1;
+    }
+    .Bangladesh{
+        grid-column: span 1;
+    }
+    .Bandarban{
+        grid-column: span 1;
+    }
+    .place-name{
+        font-size: 1rem;
+    } */
+
+    
+    
+}
